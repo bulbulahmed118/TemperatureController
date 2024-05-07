@@ -23,4 +23,11 @@ class RangeInputTest {
         passengerTemperature1.up();
         assertEquals(63, passengerTemperature1.getCurrentTemperature());
     }
+    @Test
+    void getCurrentTemperature1() {
+       passengerTemperature2.up();
+       passengerTemperature2.up();
+       passengerTemperature2.down();
+       assertEquals(66, passengerTemperature2.getCurrentTemperature());
+    }
 }
