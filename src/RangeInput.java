@@ -8,12 +8,12 @@ public class RangeInput {
         maxTemperature = 80;
         calculateTemperature();
     }
-    private RangeInput(int min,int max){
+    public RangeInput(int min,int max){
         minTmperature = min;
         maxTemperature = max;
         calculateTemperature();
     }
-    public void calculateTemperature(){
+    private void calculateTemperature(){
         currentTemperature = (minTmperature + maxTemperature)/2;
     }
     public void up(){
